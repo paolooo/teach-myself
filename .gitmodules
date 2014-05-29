@@ -1,0 +1,3 @@
+[submodule "chromecast/googlecast_Cast-Player-Sample"]
+	path = chromecast/googlecast_Cast-Player-Sample
+	url = https://github.com/googlecast/Cast-Player-Sample.git
