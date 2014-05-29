@@ -1,3 +1,7 @@
 # Become a Linguist
 
-Learn the art on how to learn multiple languages easily.
+Learn the Art of Learning Multiple Languages Easily.
+
+```bash
+$ git submodule update --init --recursive
+```

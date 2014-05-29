@@ -1,3 +1,9 @@
 [submodule "chromecast/googlecast_Cast-Player-Sample"]
 	path = chromecast/googlecast_Cast-Player-Sample
 	url = https://github.com/googlecast/Cast-Player-Sample.git
+[submodule "chromecast/googlecast/CastHelloText-chrome"]
+	path = chromecast/googlecast/CastHelloText-chrome
+	url = https://github.com/googlecast/CastHelloText-chrome.git
+[submodule "chromecast/googlecast/CastHelloVideo-chrome"]
+	path = chromecast/googlecast/CastHelloVideo-chrome
+	url = https://github.com/googlecast/CastHelloVideo-chrome.git
