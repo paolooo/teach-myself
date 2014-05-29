@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample 1</title>
+    <style type="text/css">
+      .entry {
+        border: 1px dashed #F00;
+        padding: 0 10px 20px;
+        width: 500px;
+      }
+      .entry h2 {
+        background-color: #0F0;
+      }
+      .entry div {}
+    </style>
+  </head>
+
+  <body>
+
+    <h1>Sample 1: Handlebar JS</h1>
+    <div id="output"></div>
+
+    <script id="template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h2>{{title}}</h2>
+        <div>{{body}}</div>
+      </div>
+    </script>
+
+    <script type="text/javascript" src="../bower_components/handlebars/handlebars.min.js"></script>
+    <script type="text/javascript">
+      var $ = function(name) { return document.querySelector(name); };
+      var source = $('#template').innerHTML;
+      var template = Handlebars.compile(source);
+      var data = {
+        "title": "Header Sample",
+        "body": "Template body."
+      };
+      var result = template(data);
+
+      $('#output').innerHTML = result;
+    </script>
+
+  </body>
+</html>
