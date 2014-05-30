@@ -7,3 +7,6 @@
 [submodule "chromecast/googlecast/CastHelloVideo-chrome"]
 	path = chromecast/googlecast/CastHelloVideo-chrome
 	url = https://github.com/googlecast/CastHelloVideo-chrome.git
+[submodule "chromecast/googlecast/CastVideos-chrome"]
+	path = chromecast/googlecast/CastVideos-chrome
+	url = https://github.com/googlecast/CastVideos-chrome.git
