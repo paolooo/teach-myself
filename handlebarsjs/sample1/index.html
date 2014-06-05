@@ -16,14 +16,24 @@
         <div>{{body}}</div>
       </div>
 
+      <h2>Condition</h2>
       <p>Hello {{name}}</p>
       <p>You have just won {{value}} dollars!</p>
+
       <p>{{#in_ca}}</p>
       <p>Well, {{taxed_value}} dollars, after taxes in CA.</p>
       <p>{{/in_ca}}</p>
+
       <p>{{#in_ph}}</p>
       <p>Well, {{taxed_value}} dollars, after taxes in PH.</p>
       <p>{{/in_ph}}</p>
+
+      <h2>Loop</h2>
+      <ul>
+      {{#repo}}
+        <li><b>{{name}}</b></li>
+      {{/repo}}
+      </ul>
     </script>
 
     <script type="text/javascript" src="../bower_components/handlebars/handlebars.min.js"></script>
@@ -31,14 +41,24 @@
       var $ = function(name) { return document.querySelector(name); };
       var source = $('#template').innerHTML;
       var template = Handlebars.compile(source);
+
       var data = {
         "title": "Header Sample",
         "body": "Template body.",
+
+        // if in_ca
         "name": "Chris",
         "value": 10000,
         "taxed_value": 10000 - (10000 * 0.4),
         "in_ca": true,
-        "in_ph": false
+        "in_ph": false,
+
+        // loop
+        "repo": [
+          { "name": "resque" },
+          { "name": "hub" },
+          { "name": "rip" }
+        ]
       };
       var result = template(data);
 
