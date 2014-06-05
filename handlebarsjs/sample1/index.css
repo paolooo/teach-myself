@@ -1,0 +1,9 @@
+.entry {
+  border: 1px dashed #F00;
+  padding: 0 10px 20px;
+  width: 500px;
+}
+.entry h2 {
+  background-color: #0F0;
+}
+.entry div {}

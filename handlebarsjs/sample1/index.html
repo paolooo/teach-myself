@@ -2,17 +2,7 @@
 <html>
   <head>
     <title>Sample 1</title>
-    <style type="text/css">
-      .entry {
-        border: 1px dashed #F00;
-        padding: 0 10px 20px;
-        width: 500px;
-      }
-      .entry h2 {
-        background-color: #0F0;
-      }
-      .entry div {}
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
@@ -25,6 +15,15 @@
         <h2>{{title}}</h2>
         <div>{{body}}</div>
       </div>
+
+      <p>Hello {{name}}</p>
+      <p>You have just won {{value}} dollars!</p>
+      <p>{{#in_ca}}</p>
+      <p>Well, {{taxed_value}} dollars, after taxes in CA.</p>
+      <p>{{/in_ca}}</p>
+      <p>{{#in_ph}}</p>
+      <p>Well, {{taxed_value}} dollars, after taxes in PH.</p>
+      <p>{{/in_ph}}</p>
     </script>
 
     <script type="text/javascript" src="../bower_components/handlebars/handlebars.min.js"></script>
@@ -34,7 +33,12 @@
       var template = Handlebars.compile(source);
       var data = {
         "title": "Header Sample",
-        "body": "Template body."
+        "body": "Template body.",
+        "name": "Chris",
+        "value": 10000,
+        "taxed_value": 10000 - (10000 * 0.4),
+        "in_ca": true,
+        "in_ph": false
       };
       var result = template(data);
 
