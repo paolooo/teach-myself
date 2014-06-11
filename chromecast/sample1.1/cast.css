@@ -1,0 +1,17 @@
+#log {
+  border: 1px solid;
+  padding: 5px;
+}
+
+.icon {}
+.icon.chrome {}
+.icon.chrome.cast {
+  display: inline-block;
+  background: url(images/cast_icon_idle.png) no-repeat 0 0;
+  width: 45px;
+  height: 35px;
+  cursor: pointer;
+}
+.icon.chrome.cast.active {
+  background-image: url(images/cast_icon_active.png);
+}
