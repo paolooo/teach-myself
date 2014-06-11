@@ -1,0 +1,16 @@
+{
+  "name": "teach-myself",
+  "version": "0.0.1",
+  "homepage": "https://github.com/paolooo/teach-myself",
+  "authors": [
+    "Nino Paolo Amarillento <o70vd@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "teach-myself",
+  "version": "0.0.1",
+  "description": "Learn by examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "preinstall": "node ./scripts/preinstall",
+    "postinstall": "node ./scripts/postinstall"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/paolooo/teach-myself.git"
+  },
+  "keywords": [
+    "paolooo",
+    "learn",
+    "tutorial",
+    "examples",
+    "chromecast",
+    "angularjs"
+  ],
+  "author": "Nino Paolo Amarillento <o70vd@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paolooo/teach-myself/issues"
+  },
+  "homepage": "https://github.com/paolooo/teach-myself",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "q": "~1.0.1"
+  }
+}
