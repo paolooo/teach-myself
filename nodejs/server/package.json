@@ -1,0 +1,28 @@
+{
+  "name": "basic-server",
+  "version": "0.0.1",
+  "description": "node server",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "mimetype": "0.0.5",
+    "grunt": "~0.4.5",
+    "connect": "~2.15.0",
+    "lodash": "~2.4.1",
+    "qs": "~0.6.6",
+    "grunt-contrib-watch": "~0.6.1"
+  },
+  "app": {
+    "app": "app",
+    "public": "www"
+  },
+  "config": {
+    "server": {
+      "port": 3333
+    }
+  }
+}
