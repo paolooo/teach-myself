@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Click Event | BaconJS</title>
+  </head>
+
+  <body>
+    <button>Click here</button>
+
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bacon/dist/Bacon.min.js"></script>
+
+    <script type="text/javascript">
+      $('button')
+        .asEventStream('click')
+        .onValue(function(e){ console.log('clicked! > e: ', e); });
+    </script>
+  </body>
+</html>
