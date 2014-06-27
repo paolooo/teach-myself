@@ -1,0 +1,31 @@
+{
+  "name": "player-html5",
+  "version": "0.0.1",
+  "homepage": "https://github.com/playerfm/player-html5",
+  "authors": [
+    "Nino Paolo <o70vd@yahoo.com>"
+  ],
+  "description": "Player Fm",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "www/vendor"
+  ],
+  "dependencies": {
+    "normalize-css": "2.1.3",
+    "angular": "~1.2.16",
+    "angular-mocks": "~1.2.16",
+    "angular-animate": "~1.2.16",
+    "angular-touch": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "bugsense": "~2.0.0",
+    "angular-bindonce": "~0.3.1",
+    "angular-lodash": "~0.1.0",
+    "lodash": "~2.4.1"
+  }
+}
+

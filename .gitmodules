@@ -13,3 +13,12 @@
 [submodule "chromecast/chromecast-hello-world"]
 	path = chromecast/chromecast-hello-world
 	url = https://github.com/pjjanak/chromecast-hello-world.git
+[submodule "angularjs/AngularJS-ORM"]
+	path = angularjs/AngularJS-ORM
+	url = https://github.com/ProLoser/AngularJS-ORM.git
+[submodule "angularjs/sample-orm"]
+	path = angularjs/sample-orm
+	url = https://github.com/ProLoser/AngularJS-ORM.git
+[submodule "angularjs/screenwriter"]
+	path = angularjs/screenwriter
+	url = https://github.com/ProLoser/screenwriter.git

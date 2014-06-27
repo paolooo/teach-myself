@@ -1,0 +1,29 @@
+{
+  "name": "Project-Structure",
+  "version": "0.0.1",
+  "description": "Project structrue",
+  "devDependencies": {
+  },
+  "config": {
+    "server": {
+      "port": 3333
+    },
+    "path": {
+      "source": "app",
+      "config": "app/config",
+      "assets": "app/assets",
+      "www": "www",
+      "dist": "dist"
+    },
+    "livereload": {
+      "port": 35729
+    },
+    "connect": {
+      "port": 9001
+    }
+  },
+  "scripts": {
+    "preinstall": "node ./tools/preinstall",
+    "postinstall": "node ./tools/postinstall"
+  }
+}
