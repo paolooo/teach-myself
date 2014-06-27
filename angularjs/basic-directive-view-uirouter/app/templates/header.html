@@ -1,0 +1,9 @@
+<h1 class="pull-left">{{ title || 'Add Title Here!' }}</h1>
+<ul class="nav nav-pills pull-right">
+  <li ng-class="{ 'active': (location === '/home' || location === '/') }">
+    <a href="#/">Home</a>
+  </li>
+  <li ng-class="{ 'active': location === '/signin' }">
+    <a href="#/signin">Sign in</a>
+  </li>
+</ul>
