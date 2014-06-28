@@ -3,8 +3,7 @@
 
 ;(function(){
   console.log('open-create-objectstore.js');
-
-  // In the following line, you should include the prefixes of implementations you want to test.
+// In the following line, you should include the prefixes of implementations you want to test.
   window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
   // DON'T use "var indexedDB = ..." if you're not in a function.
   // Moreover, you may need references to some window.IDB* objects:
@@ -22,8 +21,9 @@
   onDBReady.initEvent('onDBReady'); // on indexed db is opened
 
   // Let us open our database
-  var VERSION = 2;
   var DB_NAME = 'todo';
+  var USER_TABLE = 'users';
+  var TASK_TABLE = 'tasks';
   var request = indexedDB.open(DB_NAME, VERSION);
 
   request.onerror = function(event) {
@@ -43,20 +43,25 @@
     var db = event.target.result;
 
     // Create an object store or db.TABLE
-    if (! db.objectStoreNames.contains('tasks')) {
+    if (! db.objectStoreNames.contains(TASK_TABLE)) {
       // Create `tasks` table
-      db.createObjectStore('tasks', {
+      var objectStore = db.createObjectStore(TASK_TABLE, {
         keyPath: 'id',
         autoIncrement: true
       });
     }
 
-    if (! db.objectStoreNames.contains('users')) {
+    if (! db.objectStoreNames.contains(USER_TABLE)) {
       // Create `users` table
-      db.createObjectStore('users', {
+      var objectStore = db.createObjectStore(USER_TABLE, {
         keyPath: 'id',
         autoIncrement: true
       });
+    } else if (e.oldVersion < 2) {
+      // create index
+      // https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore.createIndex
+      var objectStore = request.transaction.objectStore(USER_TABLE);
+      objectStore.createIndex('name', 'first_name', {unique: false});
     }
   };
 })();
