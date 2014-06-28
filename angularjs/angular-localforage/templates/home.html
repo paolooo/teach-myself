@@ -1,0 +1,10 @@
+<input type="text" data-ng-model="task" />
+<x-btn action="add" title="Add"><div ng-transclude></div></x-btn>
+
+<h2>Todo List</h2>
+<ul>
+  <li ng-repeat="task in tasks">
+    <x-btn action="delete" title="Delete"><div ng-transclude></div></x-btn>
+    {{ task }}
+  </li>
+</ul>
