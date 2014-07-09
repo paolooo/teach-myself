@@ -32,7 +32,7 @@ module.exports = (grunt) ->
 
     hamlbars:
       default:
-        file: [
+        files: [
           expand: true
           cwd: '<%= config.app %>'
           src: ['**/*.hamlbars']
