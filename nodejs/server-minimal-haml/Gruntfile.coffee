@@ -16,7 +16,6 @@ module.exports = (grunt) ->
           hostname: 'localhost'
           port: '<%= pkg.config.server.port %>'
           base: '<%= pkg.config.server.base %>'
-          keepalive: true
 
     haml:
       server:
@@ -34,6 +33,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'serve', ->
     grunt.task.run [
-      'watch'
       'connect:server'
+      'watch'
     ]

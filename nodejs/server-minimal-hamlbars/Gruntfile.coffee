@@ -18,7 +18,6 @@ module.exports = (grunt) ->
           hostname: 'localhost'
           port: '<%= config.server.port %>'
           base: '<%= config.server.base %>'
-          keepalive: true
 
     haml:
       server:
