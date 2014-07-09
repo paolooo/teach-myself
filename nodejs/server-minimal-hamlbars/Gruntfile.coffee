@@ -9,8 +9,9 @@ module.exports = (grunt) ->
         files: '<%= config.app %>/**/*.haml'
         tasks: ['haml:server']
       hamlbars:
-        files: '<%= config.app %>/**/*.hamlbars'
-        tasks: ['hamlbars:default', 'haml:server']
+        # files: '<%= config.app %>/**/*.hamlbars'
+        files: '**/*.hamlbars'
+        tasks: ['hamlbars:default']
 
     connect:
       server:
@@ -25,7 +26,7 @@ module.exports = (grunt) ->
         files: [
           expand: true
           cwd: '<%= config.app %>'
-          src: ['**/*.haml', '**/*.hamlbars']
+          src: ['**/*.haml']
           dest: '<%= config.server.base %>'
           ext: '.html'
         ]
@@ -34,7 +35,7 @@ module.exports = (grunt) ->
       default:
         file: [
           expand: true
-          cwd: '<%= config.app %>'
+          cwd: './'
           src: ['**/*.hamlbars']
           dest: '<%= config.server.base %>'
           ext: '.handlebars'
