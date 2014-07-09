@@ -1,2 +1,0 @@
-%p= "yo"
-= hb 'App.widgetController.title'
