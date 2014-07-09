@@ -1,0 +1,29 @@
+{
+  "name": "NodeJS-Server2",
+  "version": "0.0.1",
+  "author": "Nino Paolo Amarillent <o70vd@yahoo.com>",
+  "scripts": {
+    "preinstall": "node ./scripts/preinstall",
+    "postinstall": "node ./scripts/postinstall"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "config": {
+    "app": "src",
+    "dist": "dist",
+    "server": {
+      "port": "9003",
+      "base": ".tmp"
+    }
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-connect": "~0.7.1",
+    "q": "~1.0.1",
+    "grunt-contrib-haml": "~0.2.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-hamlbars": "~0.3.0",
+    "load-grunt-tasks": "~0.6.0"
+  }
+}

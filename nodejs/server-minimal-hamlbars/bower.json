@@ -1,0 +1,26 @@
+{
+  "name": "PlayerFM Components",
+  "version": "0.0.1",
+  "homepage": "https://github.com/playerfm/player-components",
+  "authors": [
+    "Micheal Mahemoff <mike@player.fm>"
+  ],
+  "description": "Player FM Web Components",
+  "keywords": [
+    "playerfm",
+    "web",
+    "components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.17"
+  }
+}

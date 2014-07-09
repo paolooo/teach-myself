@@ -7,7 +7,7 @@ module.exports = (grunt) ->
 
     watch:
       haml:
-        files: '<%= pkg.config.app %>/components/**/*.haml'
+        files: '<%= pkg.config.app %>/**/*.haml'
         tasks: ['haml:server']
 
     connect:
@@ -34,6 +34,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'serve', ->
     grunt.task.run [
-      'connect:server'
       'watch'
+      'connect:server'
     ]
