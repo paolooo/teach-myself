@@ -42,6 +42,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask 'serve', ->
     grunt.task.run [
-      'watch'
       'connect:server'
+      'watch'
     ]
