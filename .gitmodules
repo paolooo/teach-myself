@@ -22,3 +22,6 @@
 [submodule "angularjs/screenwriter"]
 	path = angularjs/screenwriter
 	url = https://github.com/ProLoser/screenwriter.git
+[submodule "googlechrome/chrome-app-codelab"]
+	path = googlechrome/chrome-app-codelab
+	url = https://github.com/GoogleChrome/chrome-app-codelab.git
