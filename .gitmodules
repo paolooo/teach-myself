@@ -25,3 +25,6 @@
 [submodule "googlechrome/chrome-app-codelab"]
 	path = googlechrome/chrome-app-codelab
 	url = https://github.com/GoogleChrome/chrome-app-codelab.git
+[submodule "angularjs/angular-app"]
+	path = angularjs/angular-app
+	url = https://github.com/angular-app/angular-app.git
