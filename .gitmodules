@@ -28,3 +28,6 @@
 [submodule "angularjs/angular-app"]
 	path = angularjs/angular-app
 	url = https://github.com/angular-app/angular-app.git
+[submodule "angularjs/ngActiveResource"]
+	path = angularjs/ngActiveResource
+	url = https://github.com/FacultyCreative/ngActiveResource.git
