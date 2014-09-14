@@ -31,3 +31,12 @@
 [submodule "angularjs/ngActiveResource"]
 	path = angularjs/ngActiveResource
 	url = https://github.com/FacultyCreative/ngActiveResource.git
+[submodule "angularjs/textdrive"]
+	path = angularjs/textdrive
+	url = https://github.com/vojtajina/textdrive.git
+[submodule "angularjs/angular_jplayer"]
+	path = angularjs/angular_jplayer
+	url = https://github.com/djvs/angular_jplayer.git
+[submodule "angularjs/angular-media-player"]
+	path = angularjs/angular-media-player
+	url = https://github.com/mrgamer/angular-media-player.git
