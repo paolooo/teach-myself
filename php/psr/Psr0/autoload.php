@@ -1,6 +1,6 @@
 <?php
 
-function autoload($classname)
+function __autoload($classname)
 {
   $classname = ltrim($classname, '\\');
   $filename = '';
@@ -12,6 +12,10 @@ function autoload($classname)
       . DIRECTORY_SEPRATOR;
   }
   $filename .= str_replace('_', DIRECTORY_SEPRATOR, $classname) . '.php';
+
+  if (!file_exists($filename)) {
+    throw new InvalidArgumentException('File not found.');
+  }
 
   require $filename;
 }

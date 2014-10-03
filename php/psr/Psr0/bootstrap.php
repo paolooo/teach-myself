@@ -4,4 +4,4 @@ define('DIRECTORY_SEPRATOR', '/');
 
 require 'autoload.php';
 
-spl_autoload_register('autoload');
+spl_autoload_register('__autoload');
