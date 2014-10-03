@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit
+  bootstrap="bootstrap.php"
+  convertErrorToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  stopOnFailure="true"
+  colors="true"
+>
+  <testsuites>
+    <testsuite name="PSR-1">
+      <directory>./Tests/</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
