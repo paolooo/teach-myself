@@ -1,5 +1,3 @@
 <?php
 
-require 'autoload.php';
-
-spl_autoload_register('autoload');
+require '../Psr/Psr0/bootstrap.php';

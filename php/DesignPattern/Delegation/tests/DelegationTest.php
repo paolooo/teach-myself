@@ -1,9 +1,5 @@
-<?php namespace \DesignPattern\Delegation\Tests;
+<?php namespace Delegation\Tests;
 
 class DelegationTests extends \PHPUnit_Framework_TestCase
 {
-  public function testMethodsAreEqual()
-  {
-    $this->assertFalse(true);
-  }
 }

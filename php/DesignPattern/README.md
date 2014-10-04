@@ -7,5 +7,5 @@
 ## Useful Commands
 
 ```bash
-$ phpunit .
+$ phpunit
 ```
