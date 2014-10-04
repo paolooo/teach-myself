@@ -1,0 +1,19 @@
+{
+  "name": "ydn-db",
+  "version": "0.0.0",
+  "homepage": "https://github.com/paolooo/teach-myself",
+  "authors": [
+    "Nino Paolo Amarillento <o70vd@yahoo.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ydn.db": "~1.0.3"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html data-ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Angular Model</title>
+    <link rel="stylesheet" href="/bower_components/angular/angular-csp.css">
+  </head>
+  <body>
+    <div class="wrapper" data-ng-controller="AppCtrl">
+      <form ng-submit="save()">
+        <input type="text" name="description" value="" />
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="model/model.js"></script>
+    <script src="model/DbQueryInterface/DbQuery.js"></script>
+    <script src="model/DbQueryInterface/DbQueryInterface.js"></script>
+    <script src="model/DbQueryInterface/ydn-db/YdnDbQuery.js"></script>
+    <script src="model/Database/Database.js"></script>
+    <script src="model/Base/Base.js"></script>
+    <script src="app.js"></script>
+    <script src="model/sample/post.js"></script>
+  </body>
+</html>
