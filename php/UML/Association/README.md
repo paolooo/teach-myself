@@ -221,7 +221,7 @@ Also called an **"is a"** relationship, because the child class is a type of the
     |___|
     |___|
       ^
-      -
+    /___\
       |
   +-------+
   |       |
@@ -257,7 +257,7 @@ In a realization relationship, one entity (normally an interface) defines a set 
     |___|
     |___|
       ^
-      -
+    /___\
       :
       :
   +-------+
@@ -282,21 +282,18 @@ class C implements A { }
 
 ## Dependency
 
-is a relationship that shows that an element, or set of elements, requires other model elements for their specification or implementation.
+Dependency is a relationship that shows that an element, or set of elements, requires other model elements for their specification or implementation.
+Actually either one of class B’s uses, as a parameter to a method, or as a local instance reference inside a method, would be appropriate reflection of a UML dependency relationship.
 
 **UML**
 
 ```
  +---+
- | <<interface>> |
  | A |
  +---+
  |___|
  |___|
    ^
-   -
-   :
-   :
    :
    :
  +---+
@@ -309,25 +306,25 @@ is a relationship that shows that an element, or set of elements, requires other
 **PHP**
 
 ```
+<?php
+
+class A
+{
+    public function method1(B $b)
+    {
+        // logic
+        $b->methodX();
+    }
+}
+
+class B
+{
+}
 ```
 
-
-## Symbols
-
-dependency class ................> dependent class
-class A {}       ................> class B { protected $a; }
-
-derived class ---------------|> Base class
-class A { }   ---------------|> class B extends A {}
-
-          Associate with
-class a ------------------> class b
-class A {} ---------------> class B { protected $a; }
-
-child class ----------------<*> parent class
-child class -----------------<> parent class
 
 References:
 http://alexatnet.com/articles/uml-class-diagrams
 http://www.c-sharpcorner.com/UploadFile/b1df45/dependency-generalization-association-aggregation-compos/
 http://digitalkaoz.net/yuml-php/
+https://vaughnvernon.co/?page_id=31
