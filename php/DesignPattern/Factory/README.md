@@ -2,7 +2,7 @@
 
 ## UML
 
-![Factory Method](/UML/factory_method.png)
+![Factory Method](UML/factory_method.png)
 
 ## Intent
 

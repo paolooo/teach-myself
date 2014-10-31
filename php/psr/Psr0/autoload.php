@@ -13,6 +13,7 @@ function __autoload($classname)
   }
   $filename .= str_replace('_', DIRECTORY_SEPRATOR, $classname) . '.php';
 
+  echo $filename;
   if (!file_exists($filename)) {
     throw new InvalidArgumentException('File not found.');
   }
