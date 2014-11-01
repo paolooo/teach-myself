@@ -43,3 +43,6 @@
 [submodule "php/DDD/ddd-talk"]
 	path = php/DDD/ddd-talk
 	url = https://github.com/giorgiosironi/ddd-talk.git
+[submodule "php/DesignPatternsPHP"]
+	path = php/DesignPatternsPHP
+	url = https://github.com/domnikl/DesignPatternsPHP.git
