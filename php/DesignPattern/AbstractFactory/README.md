@@ -1,5 +1,7 @@
 # AbstractFactory
 
+Maka himo cya og multiple object.
+
 ## UML  
 
 ![Factory Method](UML/abstractfactory.png)
